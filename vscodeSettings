@@ -1,0 +1,60 @@
+{
+  "workbench.colorTheme": "Minimal Kiwi",
+  "editor.fontFamily": "'Fira Code iScript',MonoLisa-Regular,'MonoLisa Nerd Font Mono','JetBrains Mono', firaCode, 'Courier New', monospace",
+  "workbench.iconTheme": "vs-seti",
+  "github.copilot.advanced": {},
+  "editor.fontLigatures": "'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'zero', 'onum'",
+  "editor.cursorBlinking": "expand",
+  "remote.SSH.remotePlatform": {
+    "192.168.20.81": "linux"
+  },
+  "terminal.integrated.allowChords": false,
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "github.copilot.editor.enableAutoCompletions": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "[oraclesql]": {
+    "editor.suggest.showSnippets": true,
+    "editor.quickSuggestions": {
+      "comments": "on",
+      "strings": "on",
+      "other": "on"
+    }
+  },
+  "workbench.editorLargeFileConfirmation": 10000,
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": [
+          //following will be in italic (=FlottFlott)
+          "comment",
+          "entity.name.type.class", //class names
+          "entity.other.attribute-name", //HTML Attributes
+          "keyword", //import, export, return…
+          "constant", //String, Number, Boolean…, this, super
+          "storage.modifier", //static keyword
+          "storage.type.class.js" //class keyword
+        ],
+        "settings": {
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "scope": [
+          //following will be excluded from italics (VSCode has some defaults for italics)
+          "invalid",
+          "keyword.operator",
+          "constant.numeric.css",
+          "keyword.other.unit.px.css",
+          "constant.numeric.decimal.js",
+          "constant.numeric.json"
+        ],
+        "settings": {
+          "fontStyle": ""
+        }
+      }
+    ]
+  }
+}
